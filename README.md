@@ -34,4 +34,4 @@ Am Ende jeden Kapitels werden Vor- und Nachteile des jeweiligen Wegs genannt. Di
 2. [Der traditionelle Weg – Decoupling von HTML, CSS und JS](02-der-traditionelle-weg.md)
 3. [Der modische Weg – Rendering über JavaScript](03-der-modische-weg.md)
 4. [Der native Weg – Web Components als Browsertechnologie](04-der-native-weg.md)
-5. Die Antwort
+5. [Die Antwort](05-die-antwort.md)
