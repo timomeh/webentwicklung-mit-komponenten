@@ -270,6 +270,12 @@ Eingebunden in einer Website könnte unser Slider-Element folgendermaßen verwen
 </html>
 ```
 
+## Nicht alles muss als Web Components umgesetzt werden!
+
+Man muss nicht alle Komponenten als Web Components umsetzen. Auch wenn es sich anbietet, _eine_ Technologie auf _alle_ Komponenten im Projekt anzuwenden, so ist es auch möglich, normale HTML/CSS-Komponenten mit Web Components zu vermischen. In einem solchen Vorgehen wird deutlich, wie Web Components zu einer Erweiterung der vom Browser zur Verfügung gestellten HTML Elemente werden.
+
+Theoretisch ist es auch möglich, Web Components in einer React-Anwendung zu verwenden. Was in Web Components möglich ist, ist aber auch in React möglich. Ein paar Komponenten als Web Components zu programmieren und ein paar in React, macht wenig Sinn. Beide Technologien wurden entwickelt, um unterschiedliche Ziele zu verfolgen.<sup>8</sup>
+
 ## Zusammenfassung
 
 ### Vorteile des "nativen Wegs"
@@ -295,3 +301,4 @@ Eingebunden in einer Website könnte unser Slider-Element folgendermaßen verwen
 - <sup>5</sup> Vgl. https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM
 - <sup>6</sup> Vgl. https://www.w3.org/TR/html-imports/#link-type-import
 - <sup>7</sup> Vgl. https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/
+- <sup>8</sup> Vgl. https://facebook.github.io/react/docs/web-components.html
