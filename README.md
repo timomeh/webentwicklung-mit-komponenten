@@ -1,4 +1,6 @@
-# Webentwicklung mit Komponenten – Vergleich verschiedener Möglichkeiten zur komponenten-gestützten Webentwicklung
+<h1 align="center">Webentwicklung mit Komponenten</h1>
+
+<p align="center">**Vergleich verschiedener Möglichkeiten zur komponenten-gestützten Webentwicklung**</p>
 
 > Wie können Komponenten für Webanwendungen mit HTML, CSS und JS entwickelt werden und was sollte man bei der Entscheidung für eine Technologie beachten?
 
