@@ -103,7 +103,7 @@ Das größte Problem ist der HTML Code. In der Praxis habe ich viele Projekte ge
 
 Besser wäre eine Art _Instanziierung_ einer Komponente. Dies erreichen wir nur durch Template Engines bzw. Rendering Engines, Server-seitig oder Browser-seitig. Man darf nicht vergessen, dass Komponenten verschachtelbar sind, somit müssen auch jene Engines zulassen, dass solche Instanzen verschachtelt werden können.
 
-Das nächste Kapitel knüpft an den Gedanken einer Rendering Engine an und beschäftigt sich mit dem Erstellen und Verwalten von Komponenten über JavaScript. _[Kapitel 3: Der modische Weg – Rendering über JavaScript](03-the-trendy-way.md)_
+Das nächste Kapitel knüpft an den Gedanken einer Rendering Engine an und beschäftigt sich mit dem Erstellen und Verwalten von Komponenten über JavaScript. _[Kapitel 3: Der modische Weg – Rendering über JavaScript](03-der-modische-weg.md)_
 
 ## Zusammenfassung
 
