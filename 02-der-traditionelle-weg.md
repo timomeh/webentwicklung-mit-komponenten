@@ -10,7 +10,7 @@ HTML, CSS und JS folgen dem Designprinzip der _Seperation of Concerns_.
 - CSS beschreibt die Präsentation.
 - JavaScript beschreibt das Verhalten.
 
-Somit sind alle 3 Bausteine voneinander entkoppelt. Genauer gesagt bauen sie aufeinander auf. Je nach User Agent (Browser, Textbrowser, Drucker, ...) werden jene Bausteine angezeigt oder ignoriert. (vgl. [Stefanov 2010, 183f])
+Somit sind alle 3 Bausteine voneinander entkoppelt. Genauer gesagt bauen sie aufeinander auf. Je nach User Agent (Browser, Textbrowser, Drucker, ...) werden jene Bausteine angezeigt oder ignoriert.<sup>1</sup>
 
 Dieses Verhalten ist nicht als Nachteil zu sehen; es ist sogar sehr erstrebenswert. Es ist allerdings nicht einfach, jene Entkopplung in Komponenten wieder zusammenzuführen.
 
@@ -22,7 +22,7 @@ Wichtigster Bestandteil der _traditionellen Methode_ sind Konventionen. Vor alle
 
 ## Encapsulation in CSS
 
-Ein großes Problem bei der Erstellung von Komponenten ist das Fehlen von nativer Einkapselung in CSS. Die meisten Konventionen verlangen daher, dass jedes Element einen eindeutigen Klassennamen bekommt. Damit soll verhindert werden, dass ungewollte Style-Regeln an Kinderelemente vererbt werden. (vgl. [Gallagher SUIT-NC])
+Ein großes Problem bei der Erstellung von Komponenten ist das Fehlen von nativer Einkapselung in CSS. Die meisten Konventionen verlangen daher, dass jedes Element einen eindeutigen Klassennamen bekommt. Damit soll verhindert werden, dass ungewollte Style-Regeln an Kinderelemente vererbt werden.<sup>2</sup>
 
 Folgendes Beispiel, das oft in der Praxis zu finden ist, soll eine Schwierigkeit dabei aufzeigen:
 
@@ -62,7 +62,7 @@ Dieses Problem ist nur sicher lösbar, wenn tatsächlich jedes Element, das mit 
 
 ### BEM
 
-Die weitaus bekannteste Methodik zur Umsetzung von Komponenten in CSS ist **[BEM](http://getbem.com/)**.<sup>1</sup> BEM bezeichnet Komponenten als _"Block"_.
+Die weitaus bekannteste Methodik zur Umsetzung von Komponenten in CSS ist **[BEM](http://getbem.com/)**.<sup>3</sup> BEM bezeichnet Komponenten als _"Block"_.
 
 BEM ist vor allem eine Namenskonvention mit dem Ziel, Klassennamen eindeutig und einzigartig zu machen.
 
@@ -123,14 +123,13 @@ Das nächste Kapitel knüpft an den Gedanken einer Rendering Engine an und besch
 
 ---
 
-- <sup>1</sup> Vergleich zwischen den Suchbegriffen "bem css", "smacss" und "suitcss" auf Google. Zeigt signifikante Beliebtheit von BEM ab Mitte 2015. https://www.google.de/trends/explore?date=all&q=bem%20css,smacss,%22suit%20css%22
+- <sup>1</sup> Vgl. [Stefanov 2010, 183f]
+- <sup>2</sup> Vgl. https://github.com/suitcss/suit/blob/0cae87281148dbc77dfa3fa7639b2f8564bc945e/doc/design-principles.md
+- <sup>3</sup> Vergleich zwischen den Suchbegriffen "bem css", "smacss" und "suitcss" auf Google. Zeigt signifikante Beliebtheit von BEM ab Mitte 2015. https://www.google.de/trends/explore?date=all&q=bem%20css,smacss,%22suit%20css%22
 
 ---
 
-## Quellen
+## Literatur
 
 - **Stefanov 2010**  
   Stefanov, Stojan: _JavaScript Patterns. Build Better Applications with Coding and Design Patterns_, deutsche Ausgabe, O'Reilly Verlag GmbH & Co. KG, Köln 2010
-
-- **Gallagher SUIT-NC**  
-  Gallagher, Nicolas; Twitter: _SUIT CSS naming conventions_, auf GitHub: https://github.com/suitcss/suit/blob/0cae87281148dbc77dfa3fa7639b2f8564bc945e/doc/design-principles.md

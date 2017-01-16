@@ -53,7 +53,6 @@ In den folgenden Kapiteln werden Möglichkeiten behandelt, um dies zu verhindern
 
 ---
 
-## Quellen
+## Quelle
 
-- **Gallagher SUIT-DP**  
-  Gallagher, Nicolas; Twitter: _SUIT CSS design principles_, auf GitHub: https://github.com/suitcss/suit/blob/0cae87281148dbc77dfa3fa7639b2f8564bc945e/doc/design-principles.md
+- Gallagher, Nicolas; Twitter: _SUIT CSS design principles_, auf GitHub: https://github.com/suitcss/suit/blob/0cae87281148dbc77dfa3fa7639b2f8564bc945e/doc/design-principles.md

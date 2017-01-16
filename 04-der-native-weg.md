@@ -288,8 +288,6 @@ Eingebunden in einer Website könnte unser Slider-Element folgendermaßen verwen
 
 ---
 
-## Quellen
-
 - <sup>1</sup> Vgl. https://www.w3.org/TR/2012/WD-components-intro-20120522/
 - <sup>2</sup> Vgl. https://developers.google.com/web/fundamentals/getting-started/primers/customelements
 - <sup>3</sup> Vgl. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
