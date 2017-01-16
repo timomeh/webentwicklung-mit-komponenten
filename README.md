@@ -32,7 +32,7 @@ Am Ende jeden Kapitels werden Vor- und Nachteile des jeweiligen Wegs genannt. Di
 
 1. [Was sind Komponenten?](01-was-sind-komponenten.md)
 2. [Der traditionelle Weg – Decoupling von HTML, CSS und JS](02-der-traditionelle-weg.md)
-  1. [Verbinden, was lose ist](02-der-traditionelle-weg.md#komponenten-verbinden-was-lose-ist)
+  1. [Komponenten: Verbinden, was lose ist](02-der-traditionelle-weg.md#komponenten-verbinden-was-lose-ist)
   2. [Encapsulation in CSS](02-der-traditionelle-weg.md#encapsulation-in-css)
   3. [Umsetzung](02-der-traditionelle-weg.md#umsetzung)
     1. [BEM](02-der-traditionelle-weg.md#bem)
