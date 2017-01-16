@@ -103,7 +103,7 @@ class MySlider extends HTMLElement {
 
 Man kann sich nun fragen, wann `constructor` und wann `connectedCallback` verwendet werden sollte. Das Erstellen des Elements resultiert in den meisten Fällen auch darin, dass das Element dem DOM hinzugefügt wurde. Soll nun das Element im `constructor` oder im `connectedCallback` eingerichtet werden?
 
-Die HTML Spec gibt dazu eine Antwort:
+Die HTML Spec gibt dazu eine Antwort:<sup>3</sup>
 
 > - In general, work should be deferred to connectedCallback as much as possible – especially work involving fetching resources or rendering. However, note that connectedCallback can be called more than once, so any initialization work that is truly one-time will need a guard to prevent it from running twice.
 > - In general, the constructor should be used to set up initial state and default values, and to set up event listeners and possibly a shadow root.
@@ -114,7 +114,7 @@ Der Shadow DOM ist ein Teil des DOMs, der "im Schatten liegt"; er ist also entwe
 
 Vor allem hilft der Shadow DOM aber auch bei CSS! Das CSS, was innerhalb eines Shadow DOMs definiert wurde, ist auch nur innerhalb dieses Shadow DOMs gültig. **Es ist ein echter, nativer, _local scope_ in CSS.**
 
-Der Shadow DOM kann unkompliziert einem Element hinzugefügt werden und besitzt die üblichen Methoden (`innerHTML`, `appendChild`, …).<sup>3</sup>
+Der Shadow DOM kann unkompliziert einem Element hinzugefügt werden und besitzt die üblichen Methoden (`innerHTML`, `appendChild`, …).<sup>4</sup>
 
 ```js
 const someElement = document.querySelector('.some-element')
@@ -130,7 +130,7 @@ p { color: red }
 
 Im Shadow DOM haben wir gerade `innerHTML` als String definiert. Wir möchten das HTML im Shadow DOM aber auch als HTML definieren, nicht als String. Das `<template>` Element ermöglichen uns dies.
 
-Das `<template>` Element wird vom Browser initial nur geparst, nicht gerendert und somit nicht angezeigt. Um angezeigt zu werden, muss es dupliziert werden und explizit mit JavaScript dem DOM hinzugefügt werden.<sup>4</sup>
+Das `<template>` Element wird vom Browser initial nur geparst, nicht gerendert und somit nicht angezeigt. Um angezeigt zu werden, muss es dupliziert werden und explizit mit JavaScript dem DOM hinzugefügt werden.<sup>5</sup>
 
 ```html
 <template id="someElementInner">
@@ -155,7 +155,7 @@ shadowRoot.appendChild(templateDuplicate)
 
 Diese HTML-Datei muss importiert werden, damit der Browser das Custom Element registrieren kann. Dafür gibt es HTML Imports.
 
-HTML Imports werden als `<link>` Element im `<head>` unserer eigentlichen Website eingebunden, ähnlich wie wir auch CSS-Dateien importieren.<sup>5</sup>
+HTML Imports werden als `<link>` Element im `<head>` unserer eigentlichen Website eingebunden, ähnlich wie wir auch CSS-Dateien importieren.<sup>6</sup>
 
 ```HTML
 <head>
@@ -182,7 +182,7 @@ Ja und Nein.
 
 Aktuell: ja. Bei HTTP 1.1 sollen so wenig Requests wie möglich gemacht werden. Jeder Request stößt einen komplett neuen HTTP Request Verlauf an. Bei Web Components hilft [polymer-bundle](https://github.com/Polymer/polymer-bundler) dabei, viele HTML Imports in einer Datei zusammenzufügen.
 
-In Zukunft: nein. Durch HTTP/2 werden viele Optimierungen, die wir wegen HTTP 1.1 angewendet haben, zum Anti-Pattern. Wir können sorgenfrei viele Requests machen und viele, kleinere Dateien ausliefern, was sogar zum Vorteil wird.<sup>6</sup>
+In Zukunft: nein. Durch HTTP/2 werden viele Optimierungen, die wir wegen HTTP 1.1 angewendet haben, zum Anti-Pattern. Wir können sorgenfrei viele Requests machen und viele, kleinere Dateien ausliefern, was sogar zum Vorteil wird.<sup>7</sup>
 
 ## Beispiel einer Web Component
 
@@ -290,7 +290,8 @@ Eingebunden in einer Website könnte unser Slider-Element folgendermaßen verwen
 
 - <sup>1</sup> Vgl. https://www.w3.org/TR/2012/WD-components-intro-20120522/
 - <sup>2</sup> Vgl. https://developers.google.com/web/fundamentals/getting-started/primers/customelements
-- <sup>3</sup> Vgl. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
-- <sup>4</sup> Vgl. https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM
-- <sup>5</sup> Vgl. https://www.w3.org/TR/html-imports/#link-type-import
-- <sup>6</sup> Vgl. https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/
+- <sup>3</sup> Vgl. https://w3c.github.io/webcomponents/spec/custom/#custom-element-conformance
+- <sup>4</sup> Vgl. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
+- <sup>5</sup> Vgl. https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM
+- <sup>6</sup> Vgl. https://www.w3.org/TR/html-imports/#link-type-import
+- <sup>7</sup> Vgl. https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/
