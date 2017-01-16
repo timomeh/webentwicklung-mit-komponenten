@@ -137,6 +137,13 @@ Eine weitere Möglichkeit sind [CSS Modules](https://github.com/css-modules/css-
 
 An dieser Stelle möchte ich nochmals auf _Seperation of Concerns_ hinweisen. Nun ist nicht nur HTML und JS fest miteinander verbunden, sondern auch noch CSS. Alle diese drei Bausteine einer Website, die mit dem Gedanken der Entkopplung konzipiert wurden, sind nun fest miteinander verbunden.
 
+## Einarbeitungszeit
+
+React benötigt mehr Einarbeitungszeit als die anderen vorgestellten Methoden. Neben React selbst ist Webpack als JS-Bundler ein großer Bestandteil, der anfangs schwer zu durchblicken ist.
+
+Neben JSX wird React in ES6/ES2015 programmiert, also einer neuen Version von JavaScript, die man möglicherweise zuvor noch nicht verwendet hat. Auch stößt man schnell über [Babel](https://babeljs.io/), mit dem noch neuere JavaScript-Technologien nutzen kann.
+
+Vor allem anfangs kann all dies sehr verwirrend und überwältigend sein. Man sollte sich einige Tage Zeit einplanen, um React in allen Facetten zu lernen, und ein paar Beispielapplikationen programmieren, bevor man sich in ein echtes Projekt stürzt.
 
 ## Zusammenfassung
 
@@ -149,7 +156,7 @@ An dieser Stelle möchte ich nochmals auf _Seperation of Concerns_ hinweisen. Nu
 ### Nachteile des "modischen Wegs"
 
 - _Seperation of Concerns_ wird komplett aufgehoben.
-- Lernbarriere: Neues Framework und Technologie, die zuerst gelernt werden muss.
+- Lernbarriere: Neues Framework und Technologie, was zuerst gelernt werden muss.
 - Ohne JavaScript ist die Website non-funktional.
 - Ungeeignet für statische und kleine Websites.
 
