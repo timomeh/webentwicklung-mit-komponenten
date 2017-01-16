@@ -26,7 +26,7 @@ Jeder Weg bzw. jede Technologie wird kurz erläutert, wie sie im Hinblick auf Ko
 
 Zu jedem Weg werden Hindernisse aufgezeigt, auf die man während dem Programmieren achten muss. Über solche Pitfalls sollte man sich bewusst sein, bevor man eine Technologie auswählt.
 
-Am Ende jedes Kapitels werden Vor- und Nachteile des jeweiligen Wegs genannt. Dies ist auch eine kurze Zusammenfassung jeder Technologie im Hinblick auf Komponentenbildung.
+Am Ende jeden Kapitels werden Vor- und Nachteile des jeweiligen Wegs genannt. Dies ist auch eine kurze Zusammenfassung der jeweiligen Technologie im Hinblick auf Komponentenbildung.
 
 ## Inhaltsverzeichnis
 
