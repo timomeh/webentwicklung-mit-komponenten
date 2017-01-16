@@ -19,7 +19,7 @@ Ziel des Vergleichs ist es _nicht_, eine dieser Technologien hervorzuheben und a
 
 Im Folgenden werden drei Wege vorgestellt, mit denen sich Komponenten erstellen lassen. Jeder Weg ist so beschrieben, dass man sich selbst kritisch damit auseinandersetzen kann, um den Weg zu finden, den man **aus subjektiver Sicht, persönlich gerne nutzen möchte.**
 
-Als Programmierer ist mir wichtig, wie der Code aussieht. Wenn ich beispielsweise ein neues Framework entdecke, schaue ich direkt nach Beispielcode. Ist er leicht zu lesen; entsteht viel Boilerplate; ist er selbsterklären; muss man sich oft wiederholen?  
+Als Programmierer ist mir wichtig, wie der Code aussieht. Wenn ich beispielsweise ein neues Framework entdecke, schaue ich direkt nach Beispielcode. Ist er leicht zu lesen; entsteht viel Boilerplate; ist er selbsterklärend; muss man sich oft wiederholen?  
 Daher gibt es in jedem Weg Codebeispiele, die verdeutlichen, wie Code aussieht.
 
 Jeder Weg bzw. jede Technologie wird kurz erläutert, wie sie im Hinblick auf Komponentenbildung funktioniert. Dies ist kein vollständiges Tutorial für alle drei Technologien.
